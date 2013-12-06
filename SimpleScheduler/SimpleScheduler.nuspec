@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+    <metadata minClientVersion="3.5">
+        <id>SimpleScheduler</id>
+        <version>1.0.0</version>
+        <title>SimpleSchduler</title>
+        <authors>Sahab Yazdani</authors>
+        <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/thegrandpoobah/SimpleScheduler</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A very simple task scheduler</description>
+        <summary>A very simple task scheduler.</summary>
+        <copyright>2013</copyright>
+        <dependencies>
+            <group targetFramework=".NETFramework3.5">
+                <dependency id="NGenerics" />
+            </group>
+        </dependencies>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System" targetFramework=".NETFramework3.5" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <file src="bin\Release\SimpleScheduler.dll" target="lib\net35\SimpleScheduler.dll" />
+        <file src="bin\Release\SimpleScheduler.XML" target="lib\net35\SimpleScheduler.XML" />
+    </files>
+</package>
