@@ -1,0 +1,6 @@
+syntax: glob
+SimpleScheduler.1.0.0.nupkg
+SimpleScheduler.v11.suo
+SimpleScheduler/bin/*
+SimpleScheduler/obj/*
+packages/*
