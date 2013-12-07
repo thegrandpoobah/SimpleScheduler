@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
-    <metadata minClientVersion="3.5">
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
         <id>SimpleScheduler</id>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <title>SimpleSchduler</title>
         <authors>Sahab Yazdani</authors>
         <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
