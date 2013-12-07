@@ -7,7 +7,7 @@ using NGenerics.DataStructures.Queues;
 
 namespace SimpleScheduler
 {
-    internal class Scheduler : IDisposable
+    public class Scheduler : IDisposable
     {
         private PriorityQueue<Job, double> queue;
         private Dictionary<Guid, Job> map;
@@ -59,6 +59,21 @@ namespace SimpleScheduler
             AddJob(job);
 
             return job.Id;
+        }
+
+        /// <summary>
+        /// Adds a job to the queue.
+        /// </summary>
+        /// <param name="action">The action to run once the elapsed period has expired.</param>
+        /// <param name="millisecondsToTrigger">Number of milliseconds to wait before triggering the task.</param>
+        /// <param name="param">The parameter to pass to the action.</param>
+        /// <returns>A value that identifies this task in the system.</returns>
+        public Guid AddJob<T>(Action<T> action, double millisecondsToTrigger, T param)
+        {
+            return AddJob(() =>
+            {
+                action(param);
+            }, millisecondsToTrigger);
         }
 
         private void AddJob(Job job)
