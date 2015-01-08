@@ -163,6 +163,8 @@ namespace SimpleScheduler
                     }
 
                     job.Action();
+
+                    RemoveJob(job.Id);
                 });
             }
 
